@@ -1,7 +1,7 @@
 package ru.job4j.array;
 
 public class ArrayDefinition {
-    /* dfsdf sdf
+    /* dfsdf sdf вапва
     dsfsdfsdf
      */
     public static void main(String[] args) {
