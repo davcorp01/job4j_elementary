@@ -5,12 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class MultiplicationLoopTest {
-/* dsa fdsfsdf
 
-    public dsa getFdsfsdf() {
-        return fdsfsdf;
-    }
-*/
     @Test
     public void test() {
         assertEquals(0, MultiplicationLoop.mult(0, 2));
