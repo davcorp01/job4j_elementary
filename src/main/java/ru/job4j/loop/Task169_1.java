@@ -6,7 +6,7 @@ public class Task169_1 {
     public static void paint(int columnCount) {
         String star = "*";
         String space = " ";
-        int dotX = (columnCount + 1); //колво колонок +1
+        float dotX = (columnCount + 1); //колво колонок +1
         for (int r = 1; r <= columnCount; r++) { //перебор строк
             if (r == 1 || r == columnCount) { //если строка первая или последняя то иксы
                 for (int j = 1; j <= columnCount; j++) {
@@ -43,9 +43,9 @@ public class Task169_1 {
         }
 
     public static void main(String[] args) {
-        paint(5);
+        paint(9);
         System.out.println();
-        paint(8);
+        paint(6);
         System.out.println();
         paint(3);
         System.out.println();
