@@ -2,7 +2,7 @@ package ru.job4j.loop;
 
 import javax.swing.*;
 
-public class Task169_1 {
+public class Task169dot1 {
     public static void paint(int columnCount) {
         String star = "*";
         String space = " ";
@@ -18,9 +18,11 @@ public class Task169_1 {
             }
             if (r != 1 && r != columnCount) { // перебор колонок
                 System.out.print(space);
+                int countStar = 0;
                 for (int c = 2; c < columnCount; c++) {
                     if (r == c) {
                         System.out.print(star);
+                        countStar++;
                         if (dotX / 2 == r && dotX / 2 == c) {
                             break;
                         } else {
@@ -29,11 +31,15 @@ public class Task169_1 {
                     }
                     if (dotX - r == c) {
                         System.out.print(star);
+                        countStar++;
                         if (dotX / 2 > r) {
                             break;
                         } else {
                             continue;
                         }
+                    }
+                    if (countStar == 2) {
+                        break;
                     }
                         System.out.print(space);
                     }
@@ -43,9 +49,9 @@ public class Task169_1 {
         }
 
     public static void main(String[] args) {
-        paint(9);
-        System.out.println();
         paint(6);
+        System.out.println();
+        paint(9);
         System.out.println();
         paint(3);
         System.out.println();
