@@ -12,7 +12,5 @@ public class Task15 {
         System.out.println(source.charAt(1));
         System.out.print(source.charAt(2));
         System.out.print(source.charAt(2));
-
-        // YOUR CODE
     }
 }
