@@ -2,9 +2,9 @@ package ru.job4j.loop;
 
 public class Task169 {
     public static void paint(int columnCount) {
-        String star = "*"; String space = " "; float dotX = (columnCount + 1); //колво колонок +1
-        for (int r = 1; r <= columnCount; r++) { //перебор строк
-            if (r == 1 || r == columnCount) { //если строка первая или последняя то иксы
+        String star = "*"; String space = " "; float dotX = (columnCount + 1);
+        for (int r = 1; r <= columnCount; r++) {
+            if (r == 1 || r == columnCount) {
                 for (int j = 1; j <= columnCount; j++) {
                     System.out.print(star);
                 }
@@ -12,7 +12,7 @@ public class Task169 {
                     System.out.println();
                 }
             }
-            if (r != 1 && r != columnCount) { // перебор колонок
+            if (r != 1 && r != columnCount) {
                 System.out.print(space);
                 int countStar = 0;
                 for (int c = 2; c < columnCount; c++) {

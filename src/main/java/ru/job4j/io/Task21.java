@@ -8,6 +8,5 @@ public class Task21 {
         System.out.println("* " + fullName + " *");
         System.out.println("* +7(938) 123-45-67    *");
         System.out.print("************************");
-        // YOUR CODE
     }
 }
