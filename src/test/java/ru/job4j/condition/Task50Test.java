@@ -8,42 +8,33 @@ import java.io.PrintStream;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
-public class Task45Test {
+public class Task50Test {
     public String ln = System.lineSeparator();
 
     @Test
-    public void when23Then20() {
+    public void when373And26Then6() {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
-        Task45.changeToRoundNum(23);
-        String expected = "Уменьшено до 20" + ln;
+        Task50.maxLastDigit(373, 26);
+        String expected = "6" + ln;
         assertThat(out.toString(), is(expected));
     }
 
     @Test
-    public void when339Then330() {
+    public void when5And21Then5() {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
-        Task45.changeToRoundNum(339);
-        String expected = "Уменьшено до 330" + ln;
+        Task50.maxLastDigit(5, 21);
+        String expected = "5" + ln;
         assertThat(out.toString(), is(expected));
     }
 
     @Test
-    public void when272Then280() {
+    public void when20And200ThenEquals() {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
-        Task45.changeToRoundNum(272);
-        String expected = "Увеличено до 280" + ln;
-        assertThat(out.toString(), is(expected));
-    }
-
-    @Test
-    public void when20Then20() {
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(out));
-        Task45.changeToRoundNum(20);
-        String expected = "Без изменений" + ln;
+        Task50.maxLastDigit(20, 200);
+        String expected = "Одинаковые" + ln;
         assertThat(out.toString(), is(expected));
     }
 }
