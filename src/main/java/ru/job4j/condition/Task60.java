@@ -1,6 +1,5 @@
 package ru.job4j.condition;
 
-
 public class Task60 {
     public static void numRelation(int a, int b, int c) {
         if (a == b && a == c) {
