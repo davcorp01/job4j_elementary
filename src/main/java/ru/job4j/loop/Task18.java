@@ -1,5 +1,8 @@
 package ru.job4j.loop;
-
+/*
+Job4j Упражнения 1.1.5. Циклы 18. Вывести положительные четные двузначные числа с добавлением символа
+https://job4j.ru/profile/topics/14/task_code/364/181734
+ */
 import java.util.StringJoiner;
 
 public class Task18 {
